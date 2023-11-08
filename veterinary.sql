@@ -159,3 +159,6 @@ WHERE animalid=8;
 UPDATE doctors
 SET dlastname='Reyes-Gonzales'
 WHERE dfirstname = 'Dr. Sofia';
+
+SELECT species
+FROM animals; 
