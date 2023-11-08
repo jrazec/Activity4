@@ -165,3 +165,14 @@ FROM animals;
 
 SELECT SUM(totalamount)
 FROM invoices;
+
+SELECT 
+	owners.ofirstname,
+	COUNT(appointments.appointid)
+FROM owners
+INNER JOIN animals
+ON animals.ownerid = owners.ownerid
+INNER JOIN appointments
+ON appointments.animalid = animals.animalid
+GROUP BY owners.ofirstname
+WHERE owners.ofirstname = 'Maria';
