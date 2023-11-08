@@ -162,3 +162,6 @@ WHERE dfirstname = 'Dr. Sofia';
 
 SELECT species
 FROM animals; 
+
+SELECT SUM(totalamount)
+FROM invoices;
