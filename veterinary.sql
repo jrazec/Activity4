@@ -105,3 +105,12 @@ VALUES
    (9,9,'2023-05-02','Allergy treatment'),
    (10,10,'2023-05-20','Eye Infection');
 
+INSERT INTO
+    doctors(doctorid,dfirstname,dlastname,specialty,phone,email)
+VALUES 
+    (1,'Dr. Maria','Santos','General Veterinarian','987-654-3210','maria@example.com'),
+    (2,'Dr. Antonio','Gonzales','Feline Specialist','555-123-4567','antonio@example.com'),
+    (3,'Dr. Felipe','Luna','Orthopedic Specialist','111-222-3333','felipe@example.com'),
+    (4,'Dr. Sofia','Reyes','Dermatology Specialist','999-888-7777','sofia@example.com'),
+    (5,'Dr. Luis','Torres','Surgery Specialist','123-555-7777','luis@example.com'),
+    (6,'Dr. Carmen','Fernandez','Opthalmology Specialist','333-222-1111','carmen@example.com');
