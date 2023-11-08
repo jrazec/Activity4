@@ -160,7 +160,7 @@ UPDATE doctors
 SET dlastname='Reyes-Gonzales'
 WHERE dfirstname = 'Dr. Sofia';
 
-SELECT species
+SELECT DISTINCT(species)
 FROM animals; 
 
 SELECT SUM(totalamount)
@@ -174,8 +174,8 @@ INNER JOIN animals
 ON animals.ownerid = owners.ownerid
 INNER JOIN appointments
 ON appointments.animalid = animals.animalid
-GROUP BY owners.ofirstname
-WHERE owners.ofirstname = 'Maria';
+WHERE owners.ofirstname = 'Maria'
+GROUP BY owners.ofirstname;
 
 SELECT 
 	animals.name,
@@ -189,3 +189,4 @@ LIMIT 1;
 
 --this is done before the second to the last feature, to obtain the correct answer
 UPDATE appointments SET animalid=2 WHERE appointid = 7;
+
