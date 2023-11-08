@@ -128,7 +128,7 @@ VALUES
       (8,8,150.00,'16:30:00'),
       (9,9,60.00,'14:45:00'),
       (10,10,40.00,'11:30:00');
-      
+
 INSERT INTO 
 	medicalrecords(recordid,animalid,recorddate,doctorid,diagnosis,prescription,notes)
 VALUES
@@ -145,3 +145,7 @@ VALUES
 
 ALTER TABLE owners
 ADD registereddate DATE;
+
+ALTER TABLE invoices
+RENAME COLUMN paymentdate
+TO paymenttime;
