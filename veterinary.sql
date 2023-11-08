@@ -186,3 +186,6 @@ ON appointments.animalid=animals.animalid
 GROUP BY animals.name
 ORDER BY COUNT(appointments.appointid) DESC
 LIMIT 1;
+
+--this is done before the second to the last feature, to obtain the correct answer
+UPDATE appointments SET animalid=2 WHERE appointid = 7;
